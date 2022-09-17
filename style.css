@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body h2{
+    color: #fff;
+}
+.lg h2{
+    margin-top: 20px;
+    margin-left: 60px;};
+
+body {
+    font-family: 'serif';
+    border-top: 0rem;
+    
+}
+header {
+	background-color: black;
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.image{
+    width:30%;
+    height:170px;
+    border-radius:10px;
+    background-size:cover;
+    background-position:center center;
+    margin-left: 550px;
+    margin-top: 550px;
+  }
+.lg {
+	float: left;
+}
+.lg img {
+	width: 100%;
+}
+.wlcm{
+	position: absolute;
+    float: left;
+	width: 650px;
+	height: 300px;
+    margin: 5% 30%;
+	text-align: center;
+}
+.wlcm h3 {
+	text-align: center;
+	color:#ffd700;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.wlcm p {
+    font-size: 25px;
+
+}
+.wlcm a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.wlcm a:hover {
+	background: #fff;
+	color: #90681B;
+}
+
+
+@media (max-width:600px) {
+
+  .hedin h3{
+    
+    text-align: center;
+  }
+
+	.lg {
+		
+		width: 50%;
+    margin-left: 60px;
+      
+		
+	}
+	.wlcm{
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.wlcm h1 {
+		font-size: 30px;
+  }
+}
+
+  a {
+    color: #90681B;
+  }
+  
+  /* header */
+  
+  .hedr {
+    /*background-color: black;*/
+    background-image: url("covid.jpg") ;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .hedr ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+  }
+  
+  .hedr li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .hedr li a:hover,
+  .hedr .menu-button:hover {
+    background: #fff;
+	color: #90681B;
+  }
+  
+  .hedr .lg {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .hedr .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .hedr .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .hedr .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+  }
+  
+  .hedr .menu-icon .navicon:before,
+  .hedr .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .hedr .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .hedr .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .hedr .menu-button {
+    display: none;
+  }
+  
+  .hedr .menu-button:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .hedr .menu-button:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .hedr .menu-button:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .hedr .menu-button:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .hedr .menu-button:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .hedr .menu-button:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .hedr li {
+      float: left;
+    }
+    .hedr li a {
+      padding: 20px 30px;
+    }
+    .hedr .menu {
+      clear: none;
+      float: right;
+
+      max-height: none;
+    }
+    .hedr .menu-icon {
+      display: none;
+    }
+    
+  }
